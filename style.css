@@ -419,4 +419,5 @@ font-size: 19px;
   .galeria-reciente{
      grid-template-columns: repeat(2, minmax(220px, 1fr));
   }
+
 }
