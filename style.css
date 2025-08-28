@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --color-primario:#000000;
+    --color-secundario:#fff ;
+    --color-terciario:#404040;
+    --color-cuarto:#a3a3a3;
+    --fuente-inter:"Inter", sans-serif;
+    --fuente-montserrat:"Montserrat", sans-serif;
+    --fuente-krona-one:"Krona One", sans-serif;
+}
+.header{
+border-bottom: solid var(--color-cuarto);
+display: flex;
+align-items: center;
+gap: 15px;   
+box-sizing: border-box;
+ justify-content: space-between;
+ width: 100vw;    
+ font-family: var(--fuente-inter);
+ padding-right: 40px;
+}
+.img-header{
+    border: solid var(--color-cuarto);
+    display: flex;
+    align-items: center;
+    border-radius: 100%;
+    width: 85px;
+    max-width: 50%;
+    margin-top: 5px;
+    height: auto;
+}
+
+.izq-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    flex-direction: row;
+    gap: 10px; /* espacio entre logo y título */
+}
+.texto-header{
+    display: flex;
+    flex-direction: column;
+  
+    
+}
+.titulo-header{
+    margin: 0;            /* elimina el margen superior e inferior */
+    font-size: 2rem;      /* opcional: ajusta tamaño */
+    
+    font-weight: 600;
+}
+.contenido-header{
+  margin: 0;            /* elimina el margen */
+  margin-top: 1px;     /* dejá un espacio mínimo entre título y texto */
+  font-size: 1rem;
+}
+
+.header-menu-link{
+    padding: 5px 12px;
+    border-radius: 8px;
+    border: solid var(--color-secundario);
+    background: var(--color-primario);
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--color-secundario);
+    text-decoration: none;
+    transition: 0.6s;
+    
+}
+.header-menu-link:hover{
+    background-color: var(--color-terciario);
+}
+nav a.active {
+  background-color: white;
+  color: black;   /* para que se lea bien el texto */
+  font-weight: bold;         /* Letras en negrita para resaltar visualmente el link */
+  box-shadow: 0 0 12px var(--color-cuarto); /* Sombra externa gris: crea un efecto de resplandor alrededor */
+
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
+    min-height: 100vh; /* Asegura que el cuerpo tenga al menos el alto de la pantalla */
+    overflow-y: auto;  /* Permite el scroll vertical */
+
+}
+.presentacion-contenido{
+  width: 100vw;
+  /* Ocupa todo el ancho de la ventana */
+  border-bottom: 2px solid var(--color-secundario);
+  /* Borde visible */
+  padding: 20px;
+  /* Espacio interno */
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, #000000 38%, #333333 65%, #777777 88%, #ffffff 100%);
+  color: var(--color-secundario);
+  /* Cambiá según el contraste que quieras */
+  font-family: var(--fuente-inter);
+ font-size: 15px;
+ min-height: 30vh;
+}
+.titulo-contenido{
+    color: var(--color-secundario);
+    align-self: center; /* Centra solo este div */
+    text-align: center;
+    font-size: 30px;
+
+}
+
+.parrafo-presentacion{
+   align-self: flex-start;     /* Lo saca del centro */
+  margin-left: 30%;           /* Lo empuja hacia la derecha */
+  max-width: 50%;             /* Para que no se desborde */
+  text-align: left;
+font-size: 19px;
+
+}
+.botones {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.btn {
+  background: var(--color-primario);
+  color: var(--color-secundario);
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 0 10px var(--color-cuarto);
+  transition: transform 0.2s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.sobre-mi{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 2rem;
+   width: 100vw;
+   border-bottom: 2px solid var(--color-secundario);
+   padding: 20px; /* Espacio interno */
+    box-sizing: border-box;
+    font-family: var(--fuente-inter);
+}
+.titulo-sobre{
+  font-size: 30px;
+  font-weight: 400;
+}
+.imagen-sobre {
+  width: 350px;   /* achicás el tamaño */
+  height: auto;
+  
+  border: 6px groove var(--color-cuarto);       /* borde blanco */
+  border-radius: 12px; /* esquinas redondeadas */
+  box-shadow: 0 0 8px var(--color-secundario);     /* sombra gris clara */
+ background-color: #fff;     /* opcional, relleno blanco */
+  padding: 5px;                 /* opcional, espacio interno */
+   
+}
+.sobre-mi-texto{
+  font-size: 20px;
+ max-width: 50%;    
+}
+.redes{
+  font-family: var(--fuente-inter);
+  display: flex;
+    
+  flex-direction: column;
+  align-items: center;     /* Centra horizontalmente */
+  gap: 10px;               /* Espacio entre título y botón */
+
+}
+.titulo-redes{
+  font-size: 35px;
+}
+.botones-redes {
+  display: flex;
+  gap: 30px; /* Espacio entre botones */
+  justify-content: center;
+  flex-wrap: wrap; /* Por si en móvil se necesita que bajen */
+}
+.btn-red {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: transparent;
+  border: 1px solid var(--color-secundario);
+  padding: 12px 24px;
+  border-radius: 8px;
+  color: var(--color-secundario);
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 0 10px var(--color-cuarto);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-red:hover {
+  transform: scale(1.05);
+  background-color: #7d7d7c;
+  color: var(--color-primario);
+}
+.icono-red{
+  
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+
+}
+/*  2DA PAGINA GALERIA*/
+.presentacion-galeria{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  border-bottom: 2px solid var(--color-secundario);
+  padding: 15px;
+  /* Espacio interno */
+  box-sizing: border-box;
+  font-family: var(--fuente-inter);
+  flex-direction: column;
+}
+.parrafo-galeria{
+  font-size: 20px;
+ max-width: 50%;  
+}
+.espacio{
+  display: flex;
+  font-size: 20px;
+  max-width: 50%;
+  margin-left: 29%;   
+  font-weight:400;
+}
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);          /*repeat(3, minmax(280px, 1fr)); tambien sirve creo*/
+  gap: 20px;
+  padding: 40px;
+}
+
+.card {
+    position: relative; 
+    width: 500px;              /* tamaño fijo del cuadrado */
+    aspect-ratio: 1 / 1;       /* mantiene el cuadrado (1:1) */
+    overflow: hidden;          /* recorta lo que sobresale */
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    transition: box-shadow 0.3s ease;
+}
+.card img {
+  width: 100%;
+  height: 100%; 
+  object-fit: cover; /* recorta sin deformar */
+  display: block;
+  border-radius: 12px;
+  transition: transform 0.4s ease;
+}
+
+/* Efecto zoom en la imagen */
+.card:hover img {
+  transform: scale(1.1);
+}
+/* Overlay de texto */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  border-radius: 12px;
+  text-align: center;
+  padding: 15px;
+  font-family: var(--fuente-inter);
+}
+
+.card:hover .overlay {
+  opacity: 1;
+  
+}
+.card:hover{
+  box-shadow: 0 0 20px var(--color-secundario);
+}
+.overlay h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.overlay span {
+  background: white;
+  color: black;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.recientes{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  border-bottom: 2px solid var(--color-secundario);
+  border-top: 2px solid var(--color-secundario);
+  padding: 15px;
+  /* Espacio interno */
+  box-sizing: border-box;
+  font-family: var(--fuente-inter);
+  flex-direction: column;
+}
+.galeria-reciente{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);          /*repeat(3, minmax(280px, 1fr)); tambien sirve creo*/
+  gap: 20px;
+  padding: 40px;
+}
+.image-container{
+   width: 380px;
+   /* tamaño fijo del cuadrado */
+   aspect-ratio: 1 / 1;
+   /* mantiene el cuadrado (1:1) */
+   overflow: hidden;
+   height: 410px;
+   background-color: #0a0f1c;
+   /* fondo oscuro como en la imagen */
+   border-radius: 15px;
+   /* bordes redondeados */
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+   /* sombra suave */
+   padding: 7px;
+   /* espacio interno entre borde y la imagen */
+}
+.image-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* mantiene el recorte igual que con las imágenes */
+  display: block;
+  border-radius: 8px;
+}
